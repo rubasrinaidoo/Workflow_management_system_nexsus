@@ -21,8 +21,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `nexsus_demo`
 --
-CREATE DATABASE IF NOT EXISTS `nexsus_demo` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
-USE `nexsus_demo`;
+CREATE DATABASE IF NOT EXISTS `nexsus` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `nexsus`;
 
 -- --------------------------------------------------------
 
