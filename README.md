@@ -121,17 +121,18 @@ message "Unsafe storage path".
 ---------------------------------------------------------------------
 STEP 1 - Start the services
    Open the XAMPP Control Panel and start Apache and MySQL.
+STEP 2 – Copy the application
+Download the GitHub repository using Code → Download ZIP and extract it.
+Create the folder:
+C:\xampp\htdocs\nexsus
+Copy the application PHP, CSS, JavaScript, images and PHPMailer folder into this directory. Preserve the original file and folder structure. Keep the SQL file outside the web directory.
 
-STEP 2 - Copy the application
-   Copy the "nexsus" folder from this zip to:
-        C:\xampp\htdocs\nexsus
-
-STEP 3 - Create and import the database
-   1. Open http://localhost/phpmyadmin
-   2. Click "New", create a database named: [database name]
-      (collation: utf8mb4_unicode_ci) and click Create.
-   3. Select the new database, click "Import", choose
-      database/nexsus_database.sql and click "Go".
+STEP 3 – Create and import the database
+1. Open http://localhost/phpmyadmin.
+2. Create a database named nexsus.
+3. Select the database and click Import.
+4. Choose nexsus_database.sql from the extracted GitHub repository.
+5. Click Go to import the tables and fictional demonstration records.
 
 STEP 4 - Create the private folders (if they do not exist)
    Create these folders inside C:\xampp\ (see section 5):
@@ -183,9 +184,7 @@ a second one). The owner account is created by a one-time setup page:
 
       http://localhost/nexsus/setup.php
 
-   - If you imported database/nexsus_database.sql, the owner account
-     ALREADY EXISTS. Skip this step and use the demo logins in
-     section 10.
+   - If you imported nexsus_database.sql, the demonstration Owner account already exists. Skip the initial Owner setup and use the demonstration credentials provided in the Implementation Phase PDF.
    - If you start with an EMPTY database, open setup.php once and
      follow the screen to create the owner account.
    - Employee accounts are created later by the owner, inside the
