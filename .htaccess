@@ -1,0 +1,7 @@
+Options -Indexes
+<FilesMatch "^(config|conn_db|authorization|mailer)\.php$">
+    Require all denied
+</FilesMatch>
+<FilesMatch "\.(sql|md|log|ini|bak)$">
+    Require all denied
+</FilesMatch>
